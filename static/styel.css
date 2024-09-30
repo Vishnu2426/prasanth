@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(black, #0D2F57, #09213D);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+ul a:hover {
+    color: #FF440A; /* Change color on hover */
+}
+.navclr{
+    color: #FF440A;
+}
+#name{
+    padding-left: 60px;
+    font-size: 30px;
+    color: white;   
+}
+#quote{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-left: 60px;
+}
+#profile img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 131px;
+    left: 818px;
+    border-radius: 50% 50%;
+    border: 5px solid orangered;
+
+}
+#icons {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin-left: 20px;
+        
+    }
+
+.social {
+        margin-left: 30px;
+        text-align: center;
+    } 
+
+    
+    .social .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+        background-color: rgb(248, 73, 10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; 
+        transition: transform 0.3s ease;
+    }
+
+    
+    .social img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .social .circle:hover {
+        transform: scale(1.1);
+        background-color: #e0b803;
+    }
+
+#btn {
+    margin-left: 50px;
+    margin-top: 30px;
+    display: flex; 
+    gap: 20px; 
+}
+
+#hire, #cv {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;     cursor: pointer; 
+}
+
+#hire {
+    background-color: #FF440A;
+    color: white;
+}
+
+#cv {
+    background-color: #e0b803;
+    color: black;
+}
+
+
+#hire:hover, #cv:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+
+}
+#hire:active, #cv:active {
+    transform: scale(0.95); 
+}
+#abtme{
+    
+    text-align: center;
+    margin-top: 100px;
+    
+}
+#aboutme p{
+    position: relative;
+    /* text-align: end; */
+    width: 50%;
+    float: right;
+    display: block;
+}
+#skills{
+    position: relative;
+    clear: both;
+    text-align: center;    
+    display: block;
+    justify-content: center;
+}
+#skills h2{
+    margin-top: 30px;
+
+}
+.skillimage {
+    display: inline-block; 
+    margin: 10px;
+}
+.skillimage img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.skillimage img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+#project{
+    position: relative;
+    clear: both;
+    text-align: center;    
+    display: block;
+    justify-content: center;
+}
+#project h2{
+    margin-top: 30px;
+
+}
+.projectimage {
+    display: inline-block; 
+    margin: 10px;
+}
+.projectimage img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.projectimage img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+#forms {
+    background-color: #09213D;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#forms h2 {
+    color: white;
+}
+#forms form {
+    display: flex;
+    flex-direction: column;
+}
+
+#forms input {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#forms input::placeholder {
+    color: #bbb;
+}
+
+#forms input:focus {
+    outline: none;
+    border: 2px solid #0D2F57;
+}
+
+#submitbtn {
+    background-color: #0D2F57;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitbtn:hover {
+    background-color: black;
+}
+#footer {
+    background-color: #09213D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footerpara{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 20px 40px;
+
+}
+#iconsfooter{
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+

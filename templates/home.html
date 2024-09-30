@@ -1,0 +1,104 @@
+    {%extends 'base.html'%} {%block body%}
+    <div >
+    <ul>
+        <a href="#"><span class="navclr">H</span>OME</a>
+        <a href="#aboutme"><span class="navclr">A</span>BOUT</a>
+        <a href="#iconsfooter"><span class="navclr">C</span>ONTACT</a>
+        
+    </ul>
+
+    <p id="name"><span class="navclr">H</span>i <br><span class="navclr">I</span> 'm Prasanth</p>
+    <p id="quote">" <span class="navclr">H</span>ave no fear of perfection <br> you'll never reach it ”</p>
+
+    <div id="profile">
+        <img src="../static/HTML.avif" alt="Profile" />
+    </div>
+
+    <div id="icons">
+        <div class="social">
+            <div class="circle"><a href="#">
+                <img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram" /></a>
+            </div>
+        </div>
+        <div class="social">
+            <div class="circle"><a href="#">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub" /></a>
+            </div>
+        </div>
+        <div class="social">
+            <div class="circle"><a href="#">
+                <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn" /></a>
+            </div>
+        </div>
+        <div class="social">
+            <div class="circle"><a href="https://www.facebook.com/">
+                <img src="{{ url_for('static', filename='social-media.png') }}" alt="Social Media" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="btn">
+        <a href="#forms">
+        <button id="hire">Hire Me</button></a>
+        <a href="#"></a><button id="cv">Download CV</button></a>
+    </div>
+    <div id="aboutme">
+        <h2 id="abtme"><span class="navclr">A</span>BOUT ME</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officiis
+        beatae. Adipisci reiciendis dolor accusantium temporibus officia cum sed
+        exercitationem.</p>
+    </div>
+
+    <div id="skills">
+        <h2><span class="navclr">S</span>KILLS</h2>
+        <div class="skillimage"><img src="../static/HTML.avif" alt="image1"></div>
+        <div class="skillimage"><img  src="../static/HTML.avif" alt="image2"></div>
+        <div class="skillimage"><img  src="../static/HTML.avif" alt="image3"></div>
+    </div>
+    <div id="project">
+        <h2><span class="navclr">P</span>ROJECT</h2>
+        <div class="projectimage"><img src="../static/HTML.avif" alt="project1"></div>
+        <div class="projectimage"><img src="../static/HTML.avif" alt="project2"></div>
+        <div class="projectimage"><img src="../static/HTML.avif" alt="project3"></div>
+        </div>
+
+        <div id="forms"> 
+        <h2><span class="navclr">G</span>ET IN TOUCH </h2>
+        <form action="#">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Enter Your Email">
+            <input type="text" placeholder="Enter Your Query">
+            <button type="submit" id="submitbtn">Submit</button>
+        </form>
+    </div>
+    <div id="footer">
+        <h2>Contact</h2>
+        <p class="footerpara">Prasanth</p>
+        <p class="footerpara"> Numnber</p>
+        <p class="footerpara">Mail</p>
+        
+    <div id="iconsfooter">
+        <div class="social">
+            <div class="circle">
+                <img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram" />
+            </div>
+        </div>
+        <div class="social">
+            <div class="circle">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub" />
+            </div>
+        </div>
+        <div class="social">
+            <div class="circle">
+                <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn" />
+            </div>
+        </div>
+        <div class="social">
+            <div class="circle">
+                <img src="{{ url_for('static', filename='social-media.png') }}" alt="Social Media" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    {% endblock body %}
